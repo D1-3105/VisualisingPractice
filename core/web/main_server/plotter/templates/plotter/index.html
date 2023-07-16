@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0"/>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="container">
+
+        <a href="{% url 'minimal_way_view' %}"
+           class="link-primary link-offset-2 link-underline-opacity-100-hover">
+            17 задание
+        </a>
+        <br>
+        <p class="text-muted">
+            Задан граф: система двусторонних дорог между городами. Для любой пары
+            городов можно указать соединяющий их путь. Найдите такой город, сумма расстояний
+            от которого до остальных городов минимальна.
+            Количество городов и расстояния между ними задаются от датчика случайных
+            чисел.
+            Постройте этот граф в виде простых геометрических примитивов (окружности и
+            отрезки) в ГРАФИЧЕСКОМ РЕЖИМЕ, и отобразите найденный город другим цветом.
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <a class="link-primary link-offset-2 link-underline-opacity-100-hover" data-bs-toggle="collapse"
+               href="#Collapse1" role="button" aria-expanded="false"
+               aria-controls="multiCollapseExample1">33 задание</a>
+            <div class="collapse multi-collapse" id="Collapse1">
+                <form class="form-control" method="get" action="{% url 'heli_view' %}">
+                    <div class="row">
+                        <label class="col-3">
+                            Всего столбиков:
+                        </label>
+                        <div class="col-9">
+                            {{ form_33.hor_c }}
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-3">
+                            Всего строк:
+                        </label>
+                        <div class="col-9">
+                            {{ form_33.vert_c }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-3">
+                            Длина стороны:
+                        </label>
+                        <div class="col-9">
+                            {{ form_33.side }}
+                        </div>
+
+                    </div>
+                    <button type="submit">
+                        Перейти
+                    </button>
+                </form>
+            </div>
+            <br>
+            <p class="text-muted">
+                План города представляет собой прямоугольник, разбитый двумя рядами
+                параллельных улиц на N×M квадратных кварталов. Вертолет вылетает из одного угла
+                города и летит по прямой в противоположный угол города. Определите количество
+                кварталов, над которыми пролетит вертолет. Границы кварталов не относятся к
+                кварталу, то есть считается, что вертолет пролетает над кварталом, если он пролетает
+                над его внутренней точкой.
+
+                Входные данные содержат два натуральных числа, не превосходящих 10^9
+                (миллиард) – количество кварталов в сторонах прямоугольного города.
+                Программа должна вывести число – количество кварталов, над которыми
+                пролетит вертолет. И ГРАФИЧЕСКИ отобразить путь вертолета над городом.
+            </p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

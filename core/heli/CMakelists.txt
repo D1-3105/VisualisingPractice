@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(library)
+
+# Add the library target
+add_library(library SHARED does_intersect.c)
+
+add_executable(core_heli_does_intersect core/heli/does_intersect.c)
