@@ -29,7 +29,7 @@ def is_line_inside(k: float, b: float, x_q: float, y_q: float, d: float) -> bool
     s =  d/np.sqrt(2)
     x1, y1 = x_q - s/2, y_q - s/2
     x2, y2 = x_q + s/2, y_q + s/2
-    return lib.does_line_intersect_square(k, b, x1, y1, x2, y2)
+    return bool(lib.does_line_intersect_square(k, b, x1, y1, x2, y2))
 
 
 def does_line_intersect_square(k, b, x1, y1, x2, y2):

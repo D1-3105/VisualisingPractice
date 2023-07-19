@@ -1,11 +1,10 @@
 from bokeh.models import (
-    RendererGroup,
     GlyphRenderer,
     Rect,
-    GroupFilter,
     Arrow, OpenHead,
     ColumnDataSource
 )
+
 from core.heli.poly import gen_quadro_poly_start_points, make_quadro_corners, is_line_inside
 
 

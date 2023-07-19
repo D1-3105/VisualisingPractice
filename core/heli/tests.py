@@ -10,7 +10,7 @@ def line_params():
 
 @pytest.fixture
 def q_params():
-    return 6, 2, float(4 * np.sqrt(2))
+    return 2, 2, float(4 * np.sqrt(2))
 
 
 def test_line_is_sepa(line_params, q_params):
